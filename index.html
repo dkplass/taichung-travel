@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>台中市旅遊網</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/59398882f8.js"></script>
+</head>
+<body>
+	<header class="header">
+		<div class="header-layer">
+			<h1 class="title">台中市旅遊資訊</h1>	
+			<div class="districts-wrap">
+				<select class="districts-select" id="districts">
+					<option>-- 請選擇地區 --</option>					
+				</select>	
+			</div>	
+			<div class="hot-districts-wrap" id="hotDistricts">
+				<span class="hot-districts-title">熱門行政區</span>				
+			</div>			
+		</div>
+	</header>
+	<div class="main">
+		<h1 class="main-title" id="districtsTitle">行政區</h1>
+		<div class="content" id="cardContent"></div>
+		<div class="page">
+			<!-- <a href="#">&lt; prev</a>
+			<a href="#" class="selected">1</a>
+			<a href="#">2</a>
+			<a href="#">3</a>
+			<a href="#">next &gt;</a> -->
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="text">台中旅遊網</div>
+		<div class="text">資料來源：台中市政府</div>
+	</footer>
+	
+	<script type="text/javascript" src="js/attraction.js"></script>
+	<script type="text/javascript" src="js/all.js"></script>
+</body>
+</html>

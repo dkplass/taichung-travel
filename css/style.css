@@ -1,0 +1,222 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 6rem;
+}
+
+.header {
+	height: 400px;
+	background: url(../img/taichung.jpg) no-repeat top center;
+	background-size: cover;
+	position: relative;
+}
+
+.header .header-layer {
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.header .title {
+	color: #fff;
+	text-align: center;
+	margin: 3rem 0;
+	cursor: default;
+}
+
+.header .districts-wrap {
+	padding: 2rem 0;
+    text-align: center;
+}
+
+.header select:focus {
+	outline: none;
+	border: 2px solid #fff;	
+}
+
+.header .districts-select {
+	border: 2px solid #fff;
+    border-radius: 5px;
+    width: 400px;
+    height: 40px;
+    background: rgba(255,255,255,.5);
+    padding: 0 .5rem;
+}
+
+.header .districts-select.dropdown {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.header .hot-districts-wrap {
+	background: #fff;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    width: 70%;
+    border-radius: 4px;
+    text-align: left;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+    z-index: 99;
+}
+
+.header .hot-districts-title {
+	display: block;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #7a7a7a;
+}
+
+.header .hot-btn {
+	height: 40px;
+    width: 100px;
+    text-align: center;
+    padding: 0 1.5rem;
+    margin: .5rem 0;
+    background: #7a7a7a;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 1.2rem;
+    transition: all .2s;
+}
+
+.header .hot-btn:focus {
+	outline: none;
+}
+
+.header .hot-btn:hover {
+	background-color: #fff;
+	color: #7a7a7a;	
+  	box-shadow: 0px 0px 0px 3px #7a7a7a;
+}
+
+.main {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	padding: 5rem 2rem;
+}
+
+.main .main-title {
+	text-align: center;
+	color: #7a7a7a;
+}
+
+.main .content {
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+	width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main .content .box {
+	width: 50%;
+	margin-bottom: 2rem;
+}
+
+.main .content .card {	    
+    margin: 2rem;
+    border-radius: 5px;    
+    color: #7a7a7a;
+    padding: .2rem;
+    box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.main .content .top {
+	height: 180px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main .content .top-img {
+	width: 100%;
+    height: 100%;
+    background-color: #000;
+	background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.3s linear 0s;
+}
+
+.main .content .top-img:hover {
+	transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.main .content .top .title {
+	position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 99;
+    color: #fff;
+    background: rgba(0,0,0,.5);
+    padding: .4rem;
+    font-size: 1.5rem;
+    cursor: default;
+}
+
+.main .content .bottom {
+	padding: .8rem;
+}
+
+.main .content .bottom i {
+	width: 1rem;
+    margin-right: .3rem;
+}
+
+.main .page {
+	text-align: center;
+}
+
+.main .page a {
+	text-decoration: none;
+	color: #7a7a7a;
+	font-size: 1rem;
+	margin: 0 .4rem;
+	padding: .2rem
+}
+
+.main .page a.selected {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.footer {
+	position: absolute;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	padding: 1rem;
+  	color: #7a7a7a;
+  	background-color: #efefef;
+  	text-align: center;
+}
+
+.footer .text {
+	margin: .4rem 0;
+}
+
+@media screen and (max-width: 760px) {
+	.main .content .box {
+		width: 100%;
+	}
+}
